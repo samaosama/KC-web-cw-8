@@ -8,22 +8,19 @@ let random_grade_div = document.getElementById("random-grade");
 // لا تقم بتغيير او تخريب الكود الموجود فوق هذا الكومنت
 
 // طبّق الخطوة 4 في أسفل هذا الكومنت
+grades.pop();
 
 // طبّق الخطوة 5 في أسفل هذا الكومنت
+grades.push(99);
 
 // طبّق الخطوة 6 أسفل هذا الكومنت
-
-
+grades.forEach((grade) => {
+  all_grades_div.innerHTML += `<div>${grade}</div>`;
+});
 
 function search() {
-  let inputValue = document.getElementById("input").value;
-  
   // طبّق الخطوة 7 أسفل هذا الكومنت
-  
+  let random = Math.floor(Math.random() * grades.length);
+  // طبّق الخطوة 8 و 9 أسفل هذا الكومنت
+  random_grade_div.innerHTML = `<div>${grades[random]}</div>`;
 }
-
-// طبّق الخطوة 8 و 9 أسفل هذا الكومنت
-
-// طبّق الخطوة 10 أسفل هذا الكومنت
-
-
